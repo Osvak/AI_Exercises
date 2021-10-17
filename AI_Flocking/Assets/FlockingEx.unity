@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7d75f67cb0da2cf43b9bdc2bd97ae471, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.6111656, g: 0.5547312, b: 0.65122885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -292,8 +292,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031350264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.066385776, y: 0.9139013, z: -0.16659431, w: -0.36417538}
+  m_LocalPosition: {x: 20.452429, y: 17.124222, z: 6.6172905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -325,24 +325,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1376896232}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa35b9623162614881082335023629b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a3dfc8a616bd3b479d2465c652881da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   behavioralCh: {x: 2, y: 6}
   debug: 0
-  flockNum: 2
-  fragmentedFlock: 30
-  fragmentedFlockYLimit: 0.5
-  migrationFrequency: 0.1
-  posChangeFrequency: 0.5
+  flockNum: 10
+  fragmentedFlock: 38
+  fragmentedFlockYLimit: 0.046
+  migrationFrequency: 0.062
+  posChangeFrequency: 0.269
   smoothChFrequency: 0.5
   birdPref: {fileID: 3509250616930223806, guid: 94627e1867eb31e4583550292fbbb516, type: 3}
-  birdsNum: 10
-  birdSpeed: 1
-  fragmentedBirds: 10
-  fragmentedBirdsYLimit: 1
-  soaring: 0.5
-  verticalWawe: 20
+  birdsNum: 1000
+  birdSpeed: 5
+  fragmentedBirds: 5
+  fragmentedBirdsYLimit: 0.054
+  soaring: 5
+  verticalWawe: 0.01
   rotationClamp: 0
   rotationClampValue: 50
   scaleRandom: {x: 1, y: 1.5}
@@ -353,9 +353,6 @@ MonoBehaviour:
   dangerLayer:
     serializedVersion: 2
     m_Bits: 0
-  HelpURL: nvjob.github.io/unity/nvjob-boids
-  ReportAProblem: nvjob.github.io/support
-  Patrons: nvjob.github.io/patrons
 --- !u!4 &1376896234
 Transform:
   m_ObjectHideFlags: 0
