@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class FlockingScript : MonoBehaviour // MonoBehaviour adds coroutines, used to 
+public class FlockingScript : MonoBehaviour
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Creates the UI inside Unity
@@ -95,7 +95,7 @@ public class FlockingScript : MonoBehaviour // MonoBehaviour adds coroutines, us
             butterfliesTransform[b].Translate(translateCur * butterfliesSpeed[b]);
             Vector3 tpCh = flocksTransform[curentFlock[b]].position + rdTargetPos[b] + Vector3.up - butterfliesTransform[b].position;
             Quaternion rotationCur = Quaternion.LookRotation(Vector3.RotateTowards(butterfliesTransform[b].forward, tpCh, soaringCur, 0));
-            butterfliesTransform[b].localRotation = BirdsRotationClamp(rotationCur, rotationClampValue);
+            butterfliesTransform[b].localRotation = RotationClamp(rotationCur, rotationClampValue);
         }
     }
     //-----------------------------------------------------------------------------------------------------------------------------
@@ -186,7 +186,7 @@ public class FlockingScript : MonoBehaviour // MonoBehaviour adds coroutines, us
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Controls the rotation of the butterfly
-    static Quaternion BirdsRotationClamp(Quaternion rotationCur, float rotationClampValue)
+    static Quaternion RotationClamp(Quaternion rotationCur, float rotationClampValue)
     {
         Vector3 angleClamp = rotationCur.eulerAngles;
         rotationCur.eulerAngles = new Vector3(Mathf.Clamp((angleClamp.x > 180) ? angleClamp.x - 360 : angleClamp.x, -rotationClampValue, rotationClampValue), angleClamp.y, 0);
