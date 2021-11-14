@@ -1181,6 +1181,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnableTraitInspectors: 1
+--- !u!114 &1867897475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867897468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8ac131c09d04008af565adfda708ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ProblemDefinition: {fileID: 11400000, guid: 085287c8447562d4faabfd277961c2aa, type: 2}
+  m_InitializeOnStart: 1
+  m_PlannerSettings:
+    PlanningIterationsPerUpdate: 1
+    StateExpansionBudgetPerIteration: 1
+    UseCustomPlanningFrequency: 0
+    MinFramesPerPlanningUpdate: 0
+    CapPlanSize: 0
+    MaxStatesInPlan: 0
+    StopPlanningWhenToleranceAchieved: 0
+    RootEstimatedRewardTolerance: 0
+    CapPlanUpdates: 0
+    MaxUpdates: 2147483647
+    GraphSelectionJobMode: 0
+    GraphBackpropagationJobMode: 0
+  m_ExecutionSettings:
+    ExecutionMode: 0
+    MaximumDecisionTolerance: 3.4028235e+38
+    MinimumPlanSize: 0
+    MinimumPlanningTime: 0
+  m_WorldObjectQuery: {fileID: 0}
+  m_ActionExecuteInfos:
+  - m_ActionName: Wander
+    m_PlanExecutorStateUpdateMode: 0
+    m_Method: 
+    m_SourceGameObject: {fileID: 1867897468}
+    m_Source: {fileID: 0}
+    m_Arguments: []
+  - m_ActionName: Approach
+    m_PlanExecutorStateUpdateMode: 0
+    m_Method: 
+    m_SourceGameObject: {fileID: 1867897468}
+    m_Source: {fileID: 0}
+    m_Arguments: []
+  - m_ActionName: Steal
+    m_PlanExecutorStateUpdateMode: 0
+    m_Method: 
+    m_SourceGameObject: {fileID: 1867897468}
+    m_Source: {fileID: 0}
+    m_Arguments: []
+  m_AutoUpdate: 1
 --- !u!4 &1991188668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4936136730399340, guid: 10dcade9ef34ab642846c4b889ac76e7, type: 3}
