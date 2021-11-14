@@ -12,7 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a27cd9824d2898648bbe2fd90bc62daf, type: 3}
   m_Name: The End
   m_EditorClassIdentifier: 
-  m_Parameters: []
-  m_Criteria: []
+  m_Parameters:
+  - m_Name: Robber
+    m_RequiredTraits:
+    - {fileID: 11400000, guid: 6158c10ed5b323345997cc3512a10b5f, type: 2}
+    m_ProhibitedTraits: []
+    m_LimitCount: 0
+    m_LimitComparerType: 
+    m_LimitComparerReference: 
+  m_Criteria:
+  - m_Operator: ==
+    m_CustomOperatorType: 
+    m_OperandA:
+      m_Parameter: Robber
+      m_Trait: {fileID: 11400000, guid: 6158c10ed5b323345997cc3512a10b5f, type: 2}
+      m_TraitPropertyId: 1
+      m_Enum: {fileID: 0}
+      m_Value: 
+    m_OperandB:
+      m_Parameter: 
+      m_Trait: {fileID: 0}
+      m_TraitPropertyId: -1
+      m_Enum: {fileID: 0}
+      m_Value: true
   m_TerminalReward: 0
   m_CustomTerminalRewards: []

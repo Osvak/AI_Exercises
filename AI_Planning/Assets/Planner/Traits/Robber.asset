@@ -13,7 +13,28 @@ MonoBehaviour:
   m_Name: Robber
   m_EditorClassIdentifier: 
   m_Color: {r: 0.28, g: 1, b: 1, a: 1}
-  m_Properties: []
-  m_NextElementId: 0
+  m_Properties:
+  - id: 0
+  - id: 1
+  - id: 2
+  m_NextElementId: 3
   references:
     version: 1
+    00000000:
+      type: {class: BooleanProperty, ns: Unity.Semantic.Traits, asm: Unity.Semantic.Traits}
+      data:
+        m_Name: Ready2Steal
+        m_Id: 0
+        m_Value: 0
+    00000001:
+      type: {class: BooleanProperty, ns: Unity.Semantic.Traits, asm: Unity.Semantic.Traits}
+      data:
+        m_Name: Stolen
+        m_Id: 1
+        m_Value: 0
+    00000002:
+      type: {class: BooleanProperty, ns: Unity.Semantic.Traits, asm: Unity.Semantic.Traits}
+      data:
+        m_Name: CopAway
+        m_Id: 2
+        m_Value: 0
