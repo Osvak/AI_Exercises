@@ -1,0 +1,340 @@
+
+(base) C:\Users\oscarcv1>conda create -n mlagents python=3.7
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.7.12
+  latest version: 4.10.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\oscarcv1\.conda\envs\mlagents
+
+  added / updated specs:
+    - python=3.7
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2021.10.26 |       haa95532_2         115 KB
+    certifi-2021.10.8          |   py37haa95532_0         151 KB
+    openssl-1.1.1l             |       h2bbff1b_0         4.8 MB
+    pip-21.2.4                 |   py37haa95532_0         1.8 MB
+    python-3.7.11              |       h6244533_0        14.5 MB
+    setuptools-58.0.4          |   py37haa95532_0         776 KB
+    sqlite-3.36.0              |       h2bbff1b_0         780 KB
+    vc-14.2                    |       h21ff451_1           8 KB
+    vs2015_runtime-14.27.29016 |       h5e58377_2        1007 KB
+    wheel-0.37.0               |     pyhd3eb1b0_1          33 KB
+    wincertstore-0.2           |   py37haa95532_2          15 KB
+    ------------------------------------------------------------
+                                           Total:        24.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/win-64::ca-certificates-2021.10.26-haa95532_2
+  certifi            pkgs/main/win-64::certifi-2021.10.8-py37haa95532_0
+  openssl            pkgs/main/win-64::openssl-1.1.1l-h2bbff1b_0
+  pip                pkgs/main/win-64::pip-21.2.4-py37haa95532_0
+  python             pkgs/main/win-64::python-3.7.11-h6244533_0
+  setuptools         pkgs/main/win-64::setuptools-58.0.4-py37haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.36.0-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/noarch::wheel-0.37.0-pyhd3eb1b0_1
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py37haa95532_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+wheel-0.37.0         | 33 KB     | ############################################################################ | 100%
+certifi-2021.10.8    | 151 KB    | ############################################################################ | 100%
+wincertstore-0.2     | 15 KB     | ############################################################################ | 100%
+pip-21.2.4           | 1.8 MB    | ############################################################################ | 100%
+vs2015_runtime-14.27 | 1007 KB   | ############################################################################ | 100%
+vc-14.2              | 8 KB      | ############################################################################ | 100%
+python-3.7.11        | 14.5 MB   | ############################################################################ | 100%
+ca-certificates-2021 | 115 KB    | ############################################################################ | 100%
+openssl-1.1.1l       | 4.8 MB    | ############################################################################ | 100%
+sqlite-3.36.0        | 780 KB    | ############################################################################ | 100%
+setuptools-58.0.4    | 776 KB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate mlagents
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\oscarcv1>conda activate mlagents
+
+(mlagents) C:\Users\oscarcv1>conda info --envs
+# conda environments:
+#
+base                     C:\ProgramData\Anaconda2
+mlagents              *  C:\Users\oscarcv1\.conda\envs\mlagents
+
+
+(mlagents) C:\Users\oscarcv1>pip install torch
+Collecting torch
+  Downloading torch-1.10.0-cp37-cp37m-win_amd64.whl (226.6 MB)
+     |████████████████████████████████| 226.6 MB 54 kB/s
+Collecting typing-extensions
+  Downloading typing_extensions-4.0.1-py3-none-any.whl (22 kB)
+Installing collected packages: typing-extensions, torch
+Successfully installed torch-1.10.0 typing-extensions-4.0.1
+
+(mlagents) C:\Users\oscarcv1>pip install torch ~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+ERROR: Invalid requirement: '~=1.7.1'
+
+(mlagents) C:\Users\oscarcv1>pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+Collecting torch~=1.7.1
+  Downloading https://download.pytorch.org/whl/cu110/torch-1.7.1%2Bcu110-cp37-cp37m-win_amd64.whl (2050.2 MB)
+     |████████████████████████████████| 2050.2 MB 1.5 kB/s
+Collecting numpy
+  Downloading numpy-1.21.4-cp37-cp37m-win_amd64.whl (14.0 MB)
+     |████████████████████████████████| 14.0 MB 6.8 MB/s
+Requirement already satisfied: typing-extensions in c:\users\oscarcv1\.conda\envs\mlagents\lib\site-packages (from torch~=1.7.1) (4.0.1)
+Installing collected packages: numpy, torch
+  Attempting uninstall: torch
+    Found existing installation: torch 1.10.0
+    Uninstalling torch-1.10.0:
+      Successfully uninstalled torch-1.10.0
+Successfully installed numpy-1.21.4 torch-1.7.1+cu110
+
+(mlagents) C:\Users\oscarcv1>
+(mlagents) C:\Users\oscarcv1>--asdd
+"--asdd" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+(mlagents) C:\Users\oscarcv1>
+(mlagents) C:\Users\oscarcv1>python -m pip install mlagents==0.27.0
+Collecting mlagents==0.27.0
+  Downloading mlagents-0.27.0-py3-none-any.whl (160 kB)
+     |████████████████████████████████| 160 kB 2.2 MB/s
+Collecting attrs>=19.3.0
+  Downloading attrs-21.2.0-py2.py3-none-any.whl (53 kB)
+     |████████████████████████████████| 53 kB 943 kB/s
+Collecting cattrs<1.1.0
+  Downloading cattrs-1.0.0-py2.py3-none-any.whl (14 kB)
+Collecting Pillow>=4.2.1
+  Downloading Pillow-8.4.0-cp37-cp37m-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 6.4 MB/s
+Collecting mlagents-envs==0.27.0
+  Downloading mlagents_envs-0.27.0-py3-none-any.whl (75 kB)
+     |████████████████████████████████| 75 kB 1.5 MB/s
+Collecting tensorboard>=1.15
+  Downloading tensorboard-2.7.0-py3-none-any.whl (5.8 MB)
+     |████████████████████████████████| 5.8 MB ...
+Collecting pyyaml>=3.1.0
+  Downloading PyYAML-6.0-cp37-cp37m-win_amd64.whl (153 kB)
+     |████████████████████████████████| 153 kB ...
+Collecting importlib-metadata
+  Downloading importlib_metadata-4.8.2-py3-none-any.whl (17 kB)
+Requirement already satisfied: numpy<2.0,>=1.13.3 in c:\users\oscarcv1\.conda\envs\mlagents\lib\site-packages (from mlagents==0.27.0) (1.21.4)
+Collecting pypiwin32==223
+  Downloading pypiwin32-223-py3-none-any.whl (1.7 kB)
+Collecting grpcio>=1.11.0
+  Downloading grpcio-1.42.0-cp37-cp37m-win_amd64.whl (3.2 MB)
+     |████████████████████████████████| 3.2 MB 6.8 MB/s
+Collecting h5py>=2.9.0
+  Downloading h5py-3.6.0-cp37-cp37m-win_amd64.whl (2.8 MB)
+     |████████████████████████████████| 2.8 MB 6.4 MB/s
+Collecting protobuf>=3.6
+  Downloading protobuf-3.19.1-cp37-cp37m-win_amd64.whl (896 kB)
+     |████████████████████████████████| 896 kB 6.8 MB/s
+Collecting cloudpickle
+  Downloading cloudpickle-2.0.0-py3-none-any.whl (25 kB)
+Collecting pywin32>=223
+  Downloading pywin32-302-cp37-cp37m-win_amd64.whl (9.2 MB)
+     |████████████████████████████████| 9.2 MB ...
+Collecting six>=1.5.2
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting cached-property
+  Downloading cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
+Collecting google-auth<3,>=1.6.3
+  Downloading google_auth-2.3.3-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB 6.4 MB/s
+Collecting werkzeug>=0.11.15
+  Downloading Werkzeug-2.0.2-py3-none-any.whl (288 kB)
+     |████████████████████████████████| 288 kB ...
+Requirement already satisfied: setuptools>=41.0.0 in c:\users\oscarcv1\.conda\envs\mlagents\lib\site-packages (from tensorboard>=1.15->mlagents==0.27.0) (58.0.4)
+Collecting absl-py>=0.4
+  Downloading absl_py-1.0.0-py3-none-any.whl (126 kB)
+     |████████████████████████████████| 126 kB ...
+Collecting google-auth-oauthlib<0.5,>=0.4.1
+  Downloading google_auth_oauthlib-0.4.6-py2.py3-none-any.whl (18 kB)
+Collecting tensorboard-data-server<0.7.0,>=0.6.0
+  Downloading tensorboard_data_server-0.6.1-py3-none-any.whl (2.4 kB)
+Collecting markdown>=2.6.8
+  Downloading Markdown-3.3.6-py3-none-any.whl (97 kB)
+     |████████████████████████████████| 97 kB 3.5 MB/s
+Collecting requests<3,>=2.21.0
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+     |████████████████████████████████| 62 kB 378 kB/s
+Collecting tensorboard-plugin-wit>=1.6.0
+  Downloading tensorboard_plugin_wit-1.8.0-py3-none-any.whl (781 kB)
+     |████████████████████████████████| 781 kB 6.4 MB/s
+Requirement already satisfied: wheel>=0.26 in c:\users\oscarcv1\.conda\envs\mlagents\lib\site-packages (from tensorboard>=1.15->mlagents==0.27.0) (0.37.0)
+Collecting cachetools<5.0,>=2.0.0
+  Downloading cachetools-4.2.4-py3-none-any.whl (10 kB)
+Collecting rsa<5,>=3.1.4
+  Downloading rsa-4.8-py3-none-any.whl (39 kB)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB ...
+Collecting requests-oauthlib>=0.7.0
+  Downloading requests_oauthlib-1.3.0-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: typing-extensions>=3.6.4 in c:\users\oscarcv1\.conda\envs\mlagents\lib\site-packages (from importlib-metadata->mlagents==0.27.0) (4.0.1)
+Collecting zipp>=0.5
+  Downloading zipp-3.6.0-py3-none-any.whl (5.3 kB)
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 2.9 MB/s
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\oscarcv1\.conda\envs\mlagents\lib\site-packages (from requests<3,>=2.21.0->tensorboard>=1.15->mlagents==0.27.0) (2021.10.8)
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 2.0 MB/s
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.8-py3-none-any.whl (39 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 6.4 MB/s
+Collecting oauthlib>=3.0.0
+  Downloading oauthlib-3.1.1-py2.py3-none-any.whl (146 kB)
+     |████████████████████████████████| 146 kB 6.8 MB/s
+Installing collected packages: urllib3, pyasn1, idna, charset-normalizer, zipp, six, rsa, requests, pyasn1-modules, oauthlib, cachetools, requests-oauthlib, importlib-metadata, google-auth, werkzeug, tensorboard-plugin-wit, tensorboard-data-server, pyyaml, pywin32, protobuf, Pillow, markdown, grpcio, google-auth-oauthlib, cloudpickle, cached-property, attrs, absl-py, tensorboard, pypiwin32, mlagents-envs, h5py, cattrs, mlagents
+Successfully installed Pillow-8.4.0 absl-py-1.0.0 attrs-21.2.0 cached-property-1.5.2 cachetools-4.2.4 cattrs-1.0.0 charset-normalizer-2.0.8 cloudpickle-2.0.0 google-auth-2.3.3 google-auth-oauthlib-0.4.6 grpcio-1.42.0 h5py-3.6.0 idna-3.3 importlib-metadata-4.8.2 markdown-3.3.6 mlagents-0.27.0 mlagents-envs-0.27.0 oauthlib-3.1.1 protobuf-3.19.1 pyasn1-0.4.8 pyasn1-modules-0.2.8 pypiwin32-223 pywin32-302 pyyaml-6.0 requests-2.26.0 requests-oauthlib-1.3.0 rsa-4.8 six-1.16.0 tensorboard-2.7.0 tensorboard-data-server-0.6.1 tensorboard-plugin-wit-1.8.0 urllib3-1.26.7 werkzeug-2.0.2 zipp-3.6.0
+
+(mlagents) C:\Users\oscarcv1>mlagents-learn --help
+C:\Users\oscarcv1\.conda\envs\mlagents\lib\site-packages\torch\cuda\__init__.py:52: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 6050). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at  ..\c10\cuda\CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+usage: mlagents-learn.exe [-h] [--env ENV_PATH] [--resume] [--force]
+                          [--run-id RUN_ID] [--initialize-from RUN_ID]
+                          [--seed SEED] [--inference] [--base-port BASE_PORT]
+                          [--num-envs NUM_ENVS] [--debug] [--env-args ...]
+                          [--torch] [--tensorflow] [--results-dir RESULTS_DIR]
+                          [--width WIDTH] [--height HEIGHT]
+                          [--quality-level QUALITY_LEVEL]
+                          [--time-scale TIME_SCALE]
+                          [--target-frame-rate TARGET_FRAME_RATE]
+                          [--capture-frame-rate CAPTURE_FRAME_RATE]
+                          [--no-graphics] [--torch-device DEVICE]
+                          [trainer_config_path]
+
+positional arguments:
+  trainer_config_path
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --env ENV_PATH        Path to the Unity executable to train (default: None)
+  --resume              Whether to resume training from a checkpoint. Specify
+                        a --run-id to use this option. If set, the training
+                        code loads an already trained model to initialize the
+                        neural network before resuming training. This option
+                        is only valid when the models exist, and have the same
+                        behavior names as the current agents in your scene.
+                        (default: False)
+  --force               Whether to force-overwrite this run-id's existing
+                        summary and model data. (Without this flag, attempting
+                        to train a model with a run-id that has been used
+                        before will throw an error. (default: False)
+  --run-id RUN_ID       The identifier for the training run. This identifier
+                        is used to name the subdirectories in which the
+                        trained model and summary statistics are saved as well
+                        as the saved model itself. If you use TensorBoard to
+                        view the training statistics, always set a unique run-
+                        id for each training run. (The statistics for all runs
+                        with the same id are combined as if they were produced
+                        by a the same session.) (default: ppo)
+  --initialize-from RUN_ID
+                        Specify a previously saved run ID from which to
+                        initialize the model from. This can be used, for
+                        instance, to fine-tune an existing model on a new
+                        environment. Note that the previously saved models
+                        must have the same behavior parameters as your current
+                        environment. (default: None)
+  --seed SEED           A number to use as a seed for the random number
+                        generator used by the training code (default: -1)
+  --inference           Whether to run in Python inference mode (i.e. no
+                        training). Use with --resume to load a model trained
+                        with an existing run ID. (default: False)
+  --base-port BASE_PORT
+                        The starting port for environment communication. Each
+                        concurrent Unity environment instance will get
+                        assigned a port sequentially, starting from the base-
+                        port. Each instance will use the port (base_port +
+                        worker_id), where the worker_id is sequential IDs
+                        given to each instance from 0 to (num_envs - 1). Note
+                        that when training using the Editor rather than an
+                        executable, the base port will be ignored. (default:
+                        5005)
+  --num-envs NUM_ENVS   The number of concurrent Unity environment instances
+                        to collect experiences from when training (default: 1)
+  --debug               Whether to enable debug-level logging for some parts
+                        of the code (default: False)
+  --env-args ...        Arguments passed to the Unity executable. Be aware
+                        that the standalone build will also process these as
+                        Unity Command Line Arguments. You should choose
+                        different argument names if you want to create
+                        environment-specific arguments. All arguments after
+                        this flag will be passed to the executable. (default:
+                        None)
+  --torch               (Removed) Use the PyTorch framework. (default: False)
+  --tensorflow          (Removed) Use the TensorFlow framework. (default:
+                        False)
+  --results-dir RESULTS_DIR
+                        Results base directory (default: results)
+
+Engine Configuration:
+  --width WIDTH         The width of the executable window of the
+                        environment(s) in pixels (ignored for editor
+                        training). (default: 84)
+  --height HEIGHT       The height of the executable window of the
+                        environment(s) in pixels (ignored for editor training)
+                        (default: 84)
+  --quality-level QUALITY_LEVEL
+                        The quality level of the environment(s). Equivalent to
+                        calling QualitySettings.SetQualityLevel in Unity.
+                        (default: 5)
+  --time-scale TIME_SCALE
+                        The time scale of the Unity environment(s). Equivalent
+                        to setting Time.timeScale in Unity. (default: 20)
+  --target-frame-rate TARGET_FRAME_RATE
+                        The target frame rate of the Unity environment(s).
+                        Equivalent to setting Application.targetFrameRate in
+                        Unity. (default: -1)
+  --capture-frame-rate CAPTURE_FRAME_RATE
+                        The capture frame rate of the Unity environment(s).
+                        Equivalent to setting Time.captureFramerate in Unity.
+                        (default: 60)
+  --no-graphics         Whether to run the Unity executable in no-graphics
+                        mode (i.e. without initializing the graphics driver.
+                        Use this only if your agents don't use visual
+                        observations. (default: False)
+
+Torch Configuration:
+  --torch-device DEVICE
+                        Settings for the default torch.device used in
+                        training, for example, "cpu", "cuda", or "cuda:0"
+                        (default: None)
+
+(mlagents) C:\Users\oscarcv1>
